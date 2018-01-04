@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>jPreLoader v2 - A jQuery preloader for Website</title>
+    <meta name="description" content="jPreLoader plugin is a jQuery preloader to preload images for website." />
+   
+    <link rel="stylesheet" href="css/jpreloader.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+    <script src="js/jpreloader.js"></script>
+    
+    <style>
+        #li1{
+	background-image: url(http://sphotos-b.ak.fbcdn.net/hphotos-ak-ash2/182930_154035181318376_153515891370305_260764_6365588_n.jpg);
+	background-size:200px 133px;
+}
+        #li2{
+	background-image: url(http://sphotos-b.ak.fbcdn.net/hphotos-ak-ash4/261253_187145914673969_153515891370305_436202_926797_n.jpg);
+	background-size:200px 133px;
+}
+    </style>
+</head>
+<body>
+    <div id="li1"></div>
+    <div id="li2"></div>
+    
+    <script>
+        $(document).ready(function () {
+            $('body').jpreLoader({
+                
+                loaderVPos: '0%',
+                autoClose: true,
+                
+            });
+        });
+    </script>
+</body>
+</html>
